@@ -119,6 +119,7 @@ Message.prototype.toJSON = function () {
     if (self.delay_while_idle) json['delay_while_idle'] = self.delay_while_idle;
     if (self.collapse_key) json['collapse_key'] = self.collapse_key;
     if (self.restricted_package_name) json['restricted_package_name'] = self.restricted_package_name;
+    if (self.registration_ids) json['registration_ids'] = self.registration_ids;
 
     debug('TO JSON > %s', JSON.stringify(json));
 
